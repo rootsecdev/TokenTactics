@@ -3,7 +3,7 @@ Directions:
 2) Browse to outlook.office.com/owa
 3) In burp, browese to the target tab, find the folder for the above request. Send this to repeater. 
 4) Make sure request is a post request. You will need to insert both the refresh token and bearer token as shown below: 
-```
+
 POST /owa/ HTTP/2
 Host: outlook.office.com
 User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0
@@ -21,7 +21,7 @@ Sec-Fetch-Site: cross-site
 Te: trailers
 
 code=<refresh_token>&id_token=<bearer_token>
-```  
+
  
 5) Send the above request to the target. 
 6) Right click The request, select 'Show Response in Browser'
